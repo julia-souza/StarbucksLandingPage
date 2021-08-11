@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Starbucks</title>
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" > <img src="img/logo.png" alt="logo" class="logo"> </a>
+            <ul>
+                <li> <a href="#"> Home </a> </li>
+                <li> <a href="#"> Quem Somos </a> </li>
+                <li> <a href="#"> Produtos </a> </li>
+                <li> <a href="#"> Contato </a> </li>
+            </ul>
+        </header>
+        
+        <div class="content">
+            <div class="textBox">
+                <h2>Não é apenas um café <br> É <span>Starbucks</span> </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies pulvinar libero id aliquet. Vivamus molestie vehicula semper. Suspendisse vestibulum pulvinar imperdiet. Etiam laoreet eget odio et accumsan. Maecenas tincidunt aliquam consequat. Integer molestie mattis nisi vel vulputate. Suspendisse pulvinar maximus dui, laoreet condimentum arcu viverra pulvinar. Morbi porttitor ante tortor, eu vehicula sapien pulvinar quis. 
+                </p>
+            </div>
+            <div class="imgbox">
+                <img src="img/img1.png" alt="" class="cup">
+            </div>
+        </div>
+
+        <ul class="galery">
+            <li> <img src="img/thumb1.png" onclick="imgSlider('img/img1.png'); changeColor('#017143')" alt=""></li>
+            <li> <img src="img/thumb2.png" onclick="imgSlider('img/img2.png'); changeColor('#eb7495')"  alt=""></li>
+            <li> <img src="img/thumb3.png" onclick="imgSlider('img/img3.png'); changeColor('#d752b1')"  alt=""></li>
+        </ul>
+
+        <ul class="social">
+            <li><a href="#"> <img src="img/facebook.png" alt=""></a></li>
+            <li><a href="#"> <img src="img/twitter.png" alt=""></a></li>
+            <li><a href="#"> <img src="img/instagram.png" alt=""></a></li>
+        </ul>
+    </section>    
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.cup').src = anything;
+        }
+        function changeColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+
+</body>
+
+</html>
